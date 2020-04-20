@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.scei.co.jp/bn/2002/" >
+<SCRIPT id="main" src="BG" type="binary/small"/>
+
+
+<COMPONENT id="main">
+	<PARTS tagname="SPRITE"	partsid="blackBG" />
+</COMPONENT>
+
+<SPRITE id="blackBG" x="320" y="224" localw="640" localh="328" r="0.0" g="0.0" b="0.0" />
+
+</RESOURCE>
+
+
+
+

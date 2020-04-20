@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.scei.co.jp/bn/2002/">
+
+<!--#######################################################
+#                                                         #
+#           The main script                              #
+#                                                         #
+########################################################-->
+<SCRIPT id="main" src="menu" type="binary/small"/>
+
+<!-- Nene target system component -->
+
+<COMPONENT id="main" show="off">
+	<PARTS tagname="BG"	partsid="BG" />
+ 
+	<PARTS tagname="COMPONENT" partsid="cursor" />
+	<PARTS tagname="SPRITE" partsid="menu1" />
+ 
+	<PARTS tagname="SPRITE" partsid="menu2" />
+	<PARTS tagname="SPRITE" partsid="menu3" />
+	<PARTS tagname="SPRITE" partsid="menu4" />
+	<PARTS tagname="SPRITE" partsid="menu5" />
+	<PARTS tagname="SPRITE" partsid="menu6" />
+	<PARTS tagname="SPRITE" partsid="thumnail1" />
+ 
+	<PARTS tagname="SPRITE" partsid="thumnail2" />
+	<PARTS tagname="SPRITE" partsid="thumnail3" />
+	<PARTS tagname="SPRITE" partsid="thumnail4" />
+	<PARTS tagname="SPRITE" partsid="thumnail5" />
+	<PARTS tagname="SPRITE" partsid="thumnail6" />
+	<PARTS tagname="SPRITE" partsid="line1" />
+	<PARTS tagname="SPRITE" partsid="line2" />
+	<PARTS tagname="SPRITE" partsid="line3" />
+	<PARTS tagname="SPRITE" partsid="line4" />
+	<PARTS tagname="SPRITE" partsid="line5" />
+	<PARTS tagname="SPRITE" partsid="line6" />
+	<PARTS tagname="SPRITE" partsid="line7" />
+	<PARTS tagname="SPRITE" partsid="line8" />
+	<PARTS tagname="SPRITE" partsid="lineA" />
+	<PARTS tagname="SPRITE" partsid="lineB" />
+	<PARTS tagname="SPRITE" partsid="lineC" />
+	<PARTS tagname="SPRITE" partsid="lineD" />
+	<PARTS tagname="MODULE" partsid="ebbs1" />
+</COMPONENT>
+
+<COMPONENT id="dialogcomp1" show="off">
+	<PARTS tagname="MODULE" partsid="yesno1" />
+	<PARTS tagname="SPRITE" partsid="dthumnail1" />
+	<PARTS tagname="LABEL" partsid="prom" />
+	<PARTS tagname="LABEL" partsid="tit1" />
+	<PARTS tagname="LABEL" partsid="siz1" />
+	<PARTS tagname="LABEL" partsid="day1" />
+	<PARTS tagname="TEXT"  partsid="cpr1" />
+</COMPONENT>
+<COMPONENT id="dialogcomp2" show="off">
+	<PARTS tagname="MODULE" partsid="yesno1" />
+	<PARTS tagname="SPRITE" partsid="dthumnail2" />
+	<PARTS tagname="LABEL" partsid="prom" />
+	<PARTS tagname="LABEL" partsid="tit2" />
+	<PARTS tagname="LABEL" partsid="siz2" />
+	<PARTS tagname="LABEL" partsid="day2" />
+	<PARTS tagname="TEXT"  partsid="cpr2" />
+</COMPONENT>
+<COMPONENT id="dialogcomp3" show="off">
+	<PARTS tagname="MODULE" partsid="yesno1" />
+	<PARTS tagname="SPRITE" partsid="dthumnail3" />
+	<PARTS tagname="LABEL" partsid="prom" />
+	<PARTS tagname="LABEL" partsid="tit3" />
+	<PARTS tagname="LABEL" partsid="siz3" />
+	<PARTS tagname="LABEL" partsid="day3" />
+	<PARTS tagname="TEXT"  partsid="cpr3" />
+</COMPONENT>
+<COMPONENT id="dialogcomp4" show="off">
+	<PARTS tagname="MODULE" partsid="yesno1" />
+	<PARTS tagname="SPRITE" partsid="dthumnail4" />
+	<PARTS tagname="LABEL" partsid="prom" />
+	<PARTS tagname="LABEL" partsid="tit4" />
+	<PARTS tagname="LABEL" partsid="siz4" />
+	<PARTS tagname="LABEL" partsid="day4" />
+	<PARTS tagname="TEXT"  partsid="cpr4" />
+</COMPONENT>
+<COMPONENT id="dialogcomp5" show="off">
+	<PARTS tagname="MODULE" partsid="yesno1" />
+	<PARTS tagname="SPRITE" partsid="dthumnail5" />
+	<PARTS tagname="LABEL" partsid="prom" />
+	<PARTS tagname="LABEL" partsid="tit5" />
+	<PARTS tagname="LABEL" partsid="siz5" />
+	<PARTS tagname="LABEL" partsid="day5" />
+	<PARTS tagname="TEXT"  partsid="cpr5" />
+</COMPONENT>
+<COMPONENT id="dialogcomp6" show="off">
+	<PARTS tagname="MODULE" partsid="yesno1" />
+	<PARTS tagname="SPRITE" partsid="dthumnail6" />
+	<PARTS tagname="LABEL" partsid="prom" />
+	<PARTS tagname="LABEL" partsid="tit6" />
+	<PARTS tagname="LABEL" partsid="siz6" />
+	<PARTS tagname="LABEL" partsid="day6" />
+	<PARTS tagname="TEXT"  partsid="cpr6" />
+</COMPONENT>
+
+<!--　Common -->
+<LABEL id="prom" fontsize="13" x="266" y="118" zofs="2.0">
+Movie promotion</LABEL>
+
+<!-- 15th Anniversary of Gran Turismo-by Ferino Design　-->
+<SPRITE id="dthumnail1"	tex="thumnail1d"	x="180" y="304" zofs="2.0" />
+<LABEL id="tit1" fontsize="17" x="96" y="96" zofs="2.0">
+15th Anniversary of Gran Turismo-by Ferino Design</LABEL>
+<LABEL id="siz1" fontsize="13" x="438" y="118" zofs="2.0">
+179MB 04'30"</LABEL>
+<LABEL id="day1" fontsize="13" x="266" y="134" zofs="2.0">
+Release Date：8/03/2014</LABEL>
+<TEXT id="cpr1" fontsize="9" x="96" y="150" w="454" zofs="2.0">
+15th Anniversary of Gran Turismo-by Ferino Design
+</TEXT>
+
+<!-- Assassin's Creed Lineage -->
+<SPRITE id="dthumnail2"	tex="thumnail2d"	x="180" y="304" zofs="2.0" />
+<LABEL id="tit2" fontsize="17" x="96" y="96" zofs="2.0">
+Assassin's Creed Lineage</LABEL>
+<LABEL id="siz2" fontsize="13" x="438" y="118" zofs="2.0">
+919MB 03'39"</LABEL>
+<LABEL id="day2" fontsize="13" x="266" y="134" zofs="2.0">
+Release Date：11/3/2014</LABEL>
+<TEXT id="cpr2" fontsize="12" x="96" y="150" w="454" zofs="2.0">
+Assassin's Creed Lineage
+</TEXT>
+
+<!-- Hellsing AMV to Trance - Phantom of the Opera　-->
+<SPRITE id="dthumnail3"	tex="thumnail3d"	x="180" y="304" zofs="2.0" />
+<LABEL id="tit3" fontsize="17" x="96" y="96" zofs="2.0">
+Hellsing Phantom of the Opera</LABEL>
+<LABEL id="siz3" fontsize="13" x="438" y="118" zofs="2.0">
+77MB 04'01"</LABEL>
+<LABEL id="day3" fontsize="13" x="266" y="134" zofs="2.0">
+Release Date：26/04/2014</LABEL>
+<TEXT id="cpr3" fontsize="9" x="96" y="150" w="454" zofs="2.0">
+Hellsing Phantom of the Opera
+</TEXT>
+
+<!-- Castlevania: Curse of Darkness　-->
+<SPRITE id="dthumnail4"	tex="thumnail4d"	x="180" y="304" zofs="2.0" />
+<LABEL id="tit4" fontsize="17" x="96" y="96" zofs="2.0">
+Test</LABEL>
+<LABEL id="siz4" fontsize="13" x="438" y="118" zofs="2.0">
+58MB 02'10"</LABEL>
+<LABEL id="day4" fontsize="13" x="266" y="134" zofs="2.0">
+Release Date：Test</LABEL>
+<TEXT id="cpr4" fontsize="12" x="96" y="150" w="454" zofs="2.0">
+Test
+</TEXT>
+
+<!-- Rhapsodia　-->
+<SPRITE id="dthumnail5"	tex="thumnail5d"	x="180" y="304" zofs="2.0" />
+<LABEL id="tit5" fontsize="17" x="96" y="96" zofs="2.0">
+Test</LABEL>
+<LABEL id="siz5" fontsize="13" x="438" y="118" zofs="2.0">
+96MB 03'35"</LABEL>
+<LABEL id="day5" fontsize="13" x="266" y="134" zofs="2.0">
+Test</LABEL>
+<TEXT id="cpr5" fontsize="12" x="96" y="150" w="454" zofs="2.0">
+Test
+</TEXT>
+
+
+<!-- METAL GEAR SOLID 3　-->
+<SPRITE id="dthumnail6"	tex="thumnail6d"	x="180" y="304" zofs="2.0" />
+<LABEL id="tit6" fontsize="17" x="96" y="96" zofs="2.0">
+Test</LABEL>
+<LABEL id="siz6" fontsize="13" x="438" y="118" zofs="2.0">
+184MB 07'48"</LABEL>
+<LABEL id="day6" fontsize="13" x="266" y="134" zofs="2.0">
+Release Date：Test</LABEL>
+<TEXT id="cpr6" fontsize="12" x="96" y="150" w="454" zofs="2.0">
+Test
+</TEXT>
+
+
+<LABEL id="debug" fontsize="14" x="500" y="280" w="400">
+debug
+</LABEL>
+
+
+<!-- Nene sprite component port -->
+<SPRITE id="menu1"		tex="menu1"		x="120" y="84" />
+<SPRITE id="menu2"		tex="menu2"		x="320" y="84" />
+<SPRITE id="menu3"		tex="menu3"		x="520" y="84" />
+<SPRITE id="menu4"		tex="menu4"  	x="120" y="238" />
+<SPRITE id="menu5"		tex="menu5"		x="320" y="238" />
+<SPRITE id="menu6"		tex="menu6"		x="520" y="238" />
+<SPRITE id="thumnail1"	tex="thumnail1"	x="120" y="156" />
+<SPRITE id="thumnail2"	tex="thumnail2"	x="320" y="156" />
+<SPRITE id="thumnail3"	tex="thumnail3"	x="520" y="156" />
+<SPRITE id="thumnail4"	tex="thumnail4"	x="120" y="310" />
+<SPRITE id="thumnail5"	tex="thumnail5"	x="320" y="310" />
+<SPRITE id="thumnail6"	tex="thumnail6"	x="520" y="310" />
+<!-- <SPRITE id="thumnail6"	tex="thumnail6b"	x="520" y="310" />
+ -->
+
+
+<COMPONENT id="cursor" x="120" y="84" func="FUNC_FadeInOut" arg="speed=1000;roop=on;amax=0.5;amin=0.2" >
+	<PARTS tagname="SPRITE" partsid="cursor2" />
+	<PARTS tagname="SPRITE" partsid="cursor1" />
+</COMPONENT>
+<SPRITE id="cursor1" x="0" y="0" localw="200" localh="32" r="1.0" g="1.0" b="1.0" a="0.5" zofs="1.0" />
+<SPRITE id="cursor2" tex="cursor" x="0" y="74" r="1.0" g="1.0" b="1.0" a="0.5" zofs="1.0" />
+
+
+<!-- Line sprite -->
+<SPRITE id="line1" x="320" y="58" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<!-- Open 10 -->
+<SPRITE id="line2" x="320" y="68" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<!-- Open 32 -->
+<SPRITE id="line3" x="320" y="100" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<!-- 112 open -->
+<SPRITE id="line4" x="320" y="212" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<!-- Open 10 -->
+<SPRITE id="line5" x="320" y="222" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<!-- Open 32 -->
+<SPRITE id="line6" x="320" y="254" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<!-- 112 open -->
+<SPRITE id="line7" x="320" y="366" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+<SPRITE id="line8" x="320" y="390" localw="640" localh="2" r="1.0" g="1.0" b="1.0"/>
+
+<SPRITE id="lineA" x="20"  y="211" localw="1" localh="306" r="1.0" g="1.0" b="1.0" zofs="0.5 "/>
+<SPRITE id="lineB" x="220" y="211" localw="1" localh="306" r="1.0" g="1.0" b="1.0" zofs="0.5 "/>
+<SPRITE id="lineC" x="420" y="211" localw="1" localh="306" r="1.0" g="1.0" b="1.0" zofs="0.5 "/>
+<SPRITE id="lineD" x="620" y="211" localw="1" localh="306" r="1.0" g="1.0" b="1.0" zofs="0.5 "/>
+
+
+<!-- Texture -->
+<TEXTURE id="menu1"			src="image/menu/menu1.png" />
+<TEXTURE id="menu2"			src="image/menu/menu2.png" />
+<TEXTURE id="menu3"			src="image/menu/menu3.png" />
+<TEXTURE id="menu4"			src="image/menu/menu4.png" />
+<TEXTURE id="menu5"			src="image/menu/menu5.png" />
+<TEXTURE id="menu6"			src="image/menu/menu6.png" />
+
+<TEXTURE id="thumnail1"		src="image/menu/thumnail1.png" />
+<TEXTURE id="thumnail2"		src="image/menu/thumnail2.png" />
+<TEXTURE id="thumnail3"		src="image/menu/thumnail3.png" />
+<TEXTURE id="thumnail4"		src="image/menu/thumnail4.png" />
+<TEXTURE id="thumnail5"		src="image/menu/thumnail5.png" />
+<TEXTURE id="thumnail6"		src="image/menu/thumnail6.png" />
+
+
+<TEXTURE id="thumnail1d"	src="image/menu/thumnail1_d.png" />
+<TEXTURE id="thumnail2d"	src="image/menu/thumnail2_d.png" />
+<TEXTURE id="thumnail3d"	src="image/menu/thumnail3_d.png" />
+<TEXTURE id="thumnail4d"	src="image/menu/thumnail4_d.png" />
+<TEXTURE id="thumnail5d"	src="image/menu/thumnail5_d.png" />
+<TEXTURE id="thumnail6d"	src="image/menu/thumnail6_d.png" />
+
+<TEXTURE id="thumnail6b"	src="image/menu/thumnail6_B.png" />
+
+
+<TEXTURE id="cursor"		src="image/cursor.png" />
+
+<!-- Background component -->
+<BG id="BG" href="blackBG.xml" />
+
+
+<!-- Sound -->
+<BGM id="konami_bgm" bd="sound/psbb.bde" hd="sound/psbb.hde" sq="sound/gra.sqe" />
+<SE id="konami_se" bd="sound/se" hd="sound/se">
+	<NOTE id="disable" num="62" vol="60" />
+	<NOTE id="decide" num="64" vol="100" />
+	<NOTE id="select" num="65" vol="90" />
+	<NOTE id="cancel" num="60" vol="80" />
+</SE>
+
+
+<!-- Link -->
+<LINK id="to_top"	href="main.xml" />
+<LINK id="to_menu"	href="\Videos\video.xml" />
+
+
+<!-- Module -->
+<!-- Dialog module -->
+<SCRIPT id="dialog_yesno" src="common/dialog/dialog_yesno" type="binary/small"/>
+<MODULE id="yesno1" src="dialog_yesno" x="320" y="212" arg="default=yes">
+	<!-- Component within the module -->
+	<COMPONENT id="yesno1">
+		<PARTS tagname="SPRITE" partsid="box" />
+		<PARTS tagname="LABEL" partsid="question" />
+		<PARTS tagname="LABEL" partsid="yes" />
+		<PARTS tagname="LABEL" partsid="no" />
+	</COMPONENT>
+	<!-- Sprite in the module -->
+	<SPRITE id="box" 	localw="500" localh="292" r="0.1" g="0.1" b="0.4" a="0.95" zofs="1.0" />
+	<!-- Texture in the module -->
+	<!-- Label in the module -->
+	<LABEL id="question" fontsize="18" x="-20" y="90" zofs="1.0">
+Do you want to download?</LABEL>
+	<LABEL id="yes" fontsize="18" x="0" y="130" zofs="1.0" r="0.35" g="0.35" b="0.35">
+Yes</LABEL>
+	<LABEL id="no"  fontsize="18" x="110"  y="130" zofs="1.0">
+No</LABEL>
+
+</MODULE>
+
+<!-- Module video billboard -->
+<SCRIPT id="electric_bbs" src="common/ebbs/electric_bbs" type="binary/small"/>
+<MODULE id="ebbs1" src="electric_bbs" x="30" y="384" arg="speed=1;delay=300;brank=60">
+	<!-- Label in the module -->
+	<LABEL id="ebbs1_text" fontsize="14" x="0" y="0" r="1.0" g="1.0" b="1.0" zofs="1.0" >
+channel info
+</LABEL>
+</MODULE>
+
+
+<!--  Test -->
+<!-- MOVIE -->
+
+<!-- 15th Anniversary of Gran Turismo-by Ferino Design -->
+<Download
+	id="movie1"
+	title="15th Anniversary of Gran Turismo-by Ferino Design"
+	album="Movie"
+	cref="http://psbbn.w.pw/test/Videos/video/gt5.pss"
+	thumbnail_image="image/menu/thumnail1_d.png"
+	nextref="menu.xml"
+/>
+
+<!-- Assassins Creed Lineage -->
+<Download
+	id="movie2"
+	title="Assassins Creed Lineage"
+	album="Movie"
+	cref="http://188.65.14.226/psbbn/downloads/files/assassins_creed_lineage.pss"
+	thumbnail_image="image/menu/thumnail2_d.png"
+	nextref="menu.xml"
+/>
+
+<!-- Helsing Phantom of the Opera -->
+<Download
+	id="movie3"
+	title="Helsing Phantom of the Opera"
+	album="Movie"
+	cref="http://188.65.14.226/psbbn/downloads/files/helsing_opera.pss"
+	thumbnail_image="image/menu/thumnail3_d.png"
+	nextref="menu.xml"
+/>
+
+<!-- Video -->
+<Download
+	id="movie4"
+	title="Video"
+	album="Movie"
+	cref="http://188.65.14.226/psbbn/downloads/files/test.pss"
+	thumbnail_image="image/menu/thumnail4_d.png"
+	nextref="menu.xml"
+/>
+
+<!-- Video -->
+<Download
+	id="movie5"
+	title="Your Video1"
+	album="Movie"
+	cref="http://188.65.14.226/psbbn/downloads/files/video1.pss"
+	thumbnail_image="image/menu/thumnail5_d.png"
+	nextref="menu.xml"
+/>
+
+<!-- Test -->
+<Download
+ id="movie6"
+ title="Your Video2"
+ album="Movie"
+ cref="file:/mnt/smb3/test.pss"
+ thumbnail_image="image/menu/thumnail2_d.png"
+/>
+
+
+</RESOURCE>
