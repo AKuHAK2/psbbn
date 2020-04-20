@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.scei.co.jp/bn/2002/">
+
+<SCRIPT id="main" src="common/parser/BBMLParser" type="binary/small" />
+<SCRIPT id="handleFocus" src="common/parts/Focus" type="binary/small" />
+<SCRIPT id="handleTextInput" src="common/parts/NarrowTextInput" type="binary/small" />
+  <SCRIPT id="handlePL" src="common/parts/ProgressLabel" type="binary/small" /> 
+<!--   Screen adjustment   --> 
+  <PROGRESS id="progressLabel" scriptid="handlePL" parent="2D" x="400.0" y="360.0" size="18" text="Loading..." cr="0.5859" cg="0.7929" cb="0.8203" ca="1.0" /> 
+  <SCREEN id="ag" in="3" cutin="10.0" out="3" cutout="10.0" pid="progressLabel" /> 
+
+<FOCUS id="fg0" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="0.4" />
+<FOCUS id="fg1" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="1.0" />
+  <FOCUS id="fg2" group="fg" cr="0.4" cg="0.4" cb="0.8203" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="1.0" fgrrht="Decide" fgrdwn="Return" /> 
+  <FOCUS id="fg3" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="1.0" fgrrht="Decide" /> 
+  <FOCUS id="fg4" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="0.8" fgrrht="Decide" /> 
+  <FOCUS id="fg5" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="0.2" br="1.0" bg="1.0" bb="1.0" ba="0.2" /> 
+  <FOCUS id="fg6" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="0.4" br="1.0" bg="1.0" bb="1.0" ba="0.4" /> 
+  <FOCUS id="fg7" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="1.0" fgrdwn="Return" /> 
+  <FOCUS id="fg8" group="fg" cr="0.7" cg="0.7" cb="0.7" ca="0.7" br="0.7" bg="0.7" bb="0.7" ba="0.7" /> 
+
+  <HISTORY id="hi" link="game" /> 
+
+<FOCUSBASE id="ag" objid="down" />
+
+<MENU id="down" text="Download" x="320.0" y="320.0" size="24" haln="1" valn="3" parent="2D" focusgroupindex="2" />
+<MENU id="back" text="Back" x="320.0" y="360.0" size="24" haln="1" valn="3" parent="2D" focusgroupindex="2" link="game" />
+
+<!--
+<DOWNLOAD id="down" download_id="test"/>
+<Download
+	id="test"
+	title="Nobunaga's Ambition Online Trial"
+	album="Company name" 
+	cref="araki.jpg" 
+	thumbnail_image="texture/nol_logo01.tm2" 
+	nextref="download_ok.xml"
+/>
+-->
+
+<DNAS_Download_nokey
+	 ver="1.00"
+	 type="CONTENT"
+	 title="Nobunanga Online"
+	 title_id="SLPM-65197"
+	 title_sub_id="B1;SLPM-65197:D1;SLPM-65197"
+	 dldata_size="48406668"
+	 inst_size="63045632"
+	 content_type="PS2HDD"
+	 pat_name="PP.SLPM-65197.KOEI.NOBUON"
+	 pat_size="3584"
+	 inst_alloc_type="NORMAL"
+	 do_id=""
+	 application_name="Nobunanga Online"
+	 jump_flag="boot"
+    id="downloadGame"
+    thumbnail_image="texture/nol_logo01.tm2"
+    nextref="download_ok.xml"
+    cref="SLPM-65197.pkg"
+/>
+
+<!--
+<DNAS_Download_nokey
+	 ver="1.00"
+	 type="CONTENT"
+	 title="BOMBERMAN ONLINE"
+	 title_id="BLJA-00003"
+	 title_sub_id="B1;BLJA-00003:D1;BLJA-00003"
+	 dldata_size="23221388"
+	 inst_size="29884416"
+	 content_type="PS2HDD"
+	 pat_name="PP.BLJA-00003"
+	 pat_size="1024"
+	 inst_alloc_type="NORMAL"
+	 do_id=""
+	 application_name="BOMBERMAN ONLINE"
+	 jump_flag="boot"
+	 id="downloadGame"
+	thumbnail_image="http://psbbn.w.pw/psbb.hudson.co.jp/bchan/images/dl_wait.png"
+	nextref="download_ok.xml"
+	cref="http://psbbn.w.pw/test/PKG/BLJA-00003.pkg"
+	/>
+-->
+<TEXTBOX id="tbox0" x="20.0" y="105.0" tw64="37000" th64="256" ls64="256" size="15" focusgroupindex="1" parent="2D" text="Press O to download program\nNobunanga Online\nis downloaded\nand will be installed automatically\n\ntime required for it\nmay vary depending on\nvarious reasons" />
+
+<TEXTBOX id="tbox1" x="350.0" y="105.0" tw64="37000" th64="256" ls64="256" size="15" focusgroupindex="1" parent="2D" text="Nobunanga Online\n(if 1Mbit/s)\n\nwill ddownload\n22MB size\n\nonline installer\nin about 3 minutes" />
+
+<WINLINK id="game" winname="gameWindow" href="pkg.xml" />
+<WINLINK id="download" winname="downWindow" href="download_ok.xml" />
+
+  <IMG id="imglkoei" href="texture/koei_logo01.tm2"/>
+  <IMG id="imgltcity" href="texture/gamecity_logo02.tm2"/>
+  <IMAGE id="koeilogo" parent="2D" imgid="imglkoei" x="535.0" y="62.0" z="0.0" lsx="80.0" lsy="33.48" focusgroupindex="1" /> 
+  <IMAGE id="citylogo" parent="2D" imgid="imgltcity" x="15.0" y="360.0" z="0.0" focusgroupindex="1" /> 
+  <ACTION id="mActklogo" group="ag" objid="koeilogo" objtype="2"/>
+  <ACTION id="mActclogo" group="ag" objid="citylogo" objtype="2"/>
+  <IMG id="imgseiun" href="texture/nol_seiun01.tm2" /> 
+  <IMG id="imgbackground" href="texture/nol_bg01.tm2" /> 
+
+  <IMAGE id="seiun" parent="2D" imgid="imgseiun" x="0.0" y="224.0" z="-1.5" lsx="684.0" lsy="200.0" focusgroupindex="5" /> 
+  <IMAGE id="background" parent="2D" imgid="imgbackground" x="0.0" y="0.0" z="-2.0" lsx="684.0" lsy="484.0" focusgroupindex="6" /> 
+
+  <ACTION id="mActimg2" group="ag" objid="seiun" objtype="2" /> 
+  <ACTION id="mActimg3" group="ag" objid="background" objtype="2" /> 
+
+<ACTION id="act0" group="ag" objid="down"  objtype="1" lup="back" ldwn="back" rrht="downloadGame" rdwn="historyBack" />
+<ACTION id="act1" group="ag" objid="back"  objtype="1" lup="down" ldwn="down" rrht="loadWindow" rdwn="historyBack" />
+
+<ACTION id="act2" group="ag" objid="tbox0" objtype="3" />
+<ACTION id="act3" group="ag" objid="tbox1" objtype="3" />
+
+</RESOURCE>

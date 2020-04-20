@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.sce.co.jp/bn/2002/" screen_h="480">
+
+	<!-- Define the script information -->
+	<SCRIPT id="main" src="common/parser/BBMLParser" type="binary/small"/>
+	<SCRIPT id="handleFocus" src="common/parts/Focus" type="binary/small"/>
+	<SCRIPT id="handlePL" src="common/parts/ProgressLabel" type="binary/small"/>
+
+	<PROGRESS id="progressLabel" scriptid="handlePL" parent="2D" x="400.0" y="360.0" size="18" text="Loading..." cr="0.5859" cg="0.7929" cb="0.8203" ca="1.0" />
+	<SCREEN id="ag" in="3" cutin="10.0" out="3" cutout="10.0" pid="progressLabel" />
+
+	<!-- Define focus information -->
+	<FOCUSBASE id="ag" objid="menu0"/>
+	<FOCUS id="fg0" group="fg" cr="1.000000" cg="1.000000" cb="1.000000" ca="1.000000" br="1.000000" bg="1.000000" bb="1.000000" ba="1.000000"/>
+	<FOCUS id="fg1" group="fg" cr="1.000000" cg="1.000000" cb="1.000000" ca="0.800000" br="1.000000" bg="1.000000" bb="1.000000" ba="0.800000"/>
+	<FOCUS id="fg2" group="fg" cr="1.000000" cg="1.000000" cb="1.000000" ca="0.400000" br="1.000000" bg="1.000000" bb="1.000000" ba="0.400000"/>
+	<FOCUS id="fg3" group="fg" cr="0.400000" cg="0.400000" cb="0.815686" ca="1.000000" br="1.000000" bg="1.000000" bb="1.000000" ba="1.000000" fgrrht="Decide" fgrdwn="Return"/>
+
+	<!-- Define link information -->
+	<WINLINK id="link0" winname="win0" href="pkg.xml"/>
+
+	<!-- Definition of material  -->
+	<IMG id="img0" href="texture/nol_bg01.tm2"/>
+	<IMG id="img1" href="texture/nol_seiun01.tm2"/>
+	<IMG id="img2" href="texture/koei_logo01.tm2"/>
+	<IMG id="img3" href="texture/gamecity_logo02.tm2"/>
+
+	<!-- Location information of each material -->
+	<MENU id="menu0" parent="2D" x="500.0" y="360.0" z="0.0" size="16" haln="1" valn="0" text="Return" focusgroupindex="3" link="link0"/>
+
+	<IMAGE id="image0" parent="2D" imgid="img0" x="0.0" y="0.0" z="0.0" lsx="640.0" lsy="480.0" haln="0" valn="0" focusgroupindex="1"/>
+	<IMAGE id="image1" parent="2D" imgid="img1" x="0.0" y="224.0" z="0.0" lsx="640.0" lsy="200.0" haln="0" valn="0" focusgroupindex="2"/>
+	<IMAGE id="image2" parent="2D" imgid="img2" x="535.0" y="62.0" z="0.0" lsx="80.0" lsy="33.0" haln="0" valn="0" focusgroupindex="0"/>
+	<IMAGE id="image3" parent="2D" imgid="img3" x="15.0" y="360.0" z="0.0" lsx="151.0" lsy="25.0" haln="0" valn="0" focusgroupindex="0"/>
+
+	<!-- <TEXTBOX id="textbox0" parent="2D" x="20.0" y="85.0" z="0.0" size="15" tw64="25664" th64="0" ls64="256" haln="0" valn="0" text="Please choose "Nobunaga's Ambition Online" \ n \ n in [GAME channel] → [collection] \ n to people who have completed the installation of \ n "online installer". \ down \ n Load n installation of "Nobunaga's Ambition Online" trial body will start. \ The time required to \ n download the online manual \ n will be selectable, can vary by \ n and server load state of the line by pressing the △ button n ※ ​​here." focusgroupindex="0"/>
+	<TEXTBOX id="textbox1" parent="2D" x="350.0" y="105.0" z="0.0" size="15" tw64="25664" th64="0" ls64="256" haln="0" valn="0" text="(In the case of the effective line speed of 1 Mbit / s) 40 minutes \ n about 1 hour guideline \ n of about 800MB \ n \ n ■ download times "Nobunaga's Ambition Online" trial version \ n \ n ■ file size \ n" focusgroupindex="0"/>-->
+	<TEXTBOX id="textbox0" parent="2D" x="20.0" y="85.0" z="0.0" size="15" tw64="25664" th64="0" ls64="256" haln="0" valn="0" text="Please choose installed game\n\nin [GAME channel] → [collection]\nto people who have completed the\ninstallation of online installer.\nInstallation of ame will start.\nThe time required to\ndownload the online manual\nwill be selectable, can vary by\nserver load state of the line by pressing the △ button n ※ ​​here." focusgroupindex="0"/>
+	<TEXTBOX id="textbox1" parent="2D" x="350.0" y="105.0" z="0.0" size="15" tw64="25664" th64="0" ls64="256" haln="0" valn="0" text="(In the case of the effective line speed of 1 Mbit/s) 40 minutes\nabout 1 hour guideline\nof about 800MB\n\ndownload times" focusgroupindex="0"/>
+
+	<!-- Place the materials and describe the movement of the action at the time -->
+
+	<ACTION id="act0" group="ag" objid="menu0" objtype="1" rrht="loadWindow" rdwn="loadWindow"/>
+
+	<ACTION id="act1" group="ag" objid="image0" objtype="2"/>
+	<ACTION id="act2" group="ag" objid="image1" objtype="2"/>
+	<ACTION id="act3" group="ag" objid="image2" objtype="2"/>
+	<ACTION id="act4" group="ag" objid="image3" objtype="2"/>
+
+	<ACTION id="act5" group="ag" objid="textbox0" objtype="3"/>
+	<ACTION id="act6" group="ag" objid="textbox1" objtype="3"/>
+
+</RESOURCE>

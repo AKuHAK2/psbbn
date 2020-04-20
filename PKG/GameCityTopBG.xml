@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.scei.co.jp/bn/2002/">
+  <!-- Define the script information -->
+  <SCRIPT id="main" src="common/parser/BBMLParser" type="binary/small"/>
+  <SCRIPT id="handleFocus" src="common/parts/CityTopFocus" type="binary/small"/>
+  <SCRIPT id="handleSound" src="common/parts/GameCitySound" type="binary/small"/>
+  <SCRIPT id="handleVObject" src="common/parts/VirtualObject" type="binary/small" />
+  <SCRIPT id="handleVLObject" src="common/parts/VirtualLogoObject" type="binary/small" />
+  <SCRIPT id="handlePartyObject" src="common/parts/PartyObject" type="binary/small" />
+  <SCRIPT id="handleSNebula" src="common/parts/SmallNebulaEffect" type="binary/small" />
+  <SCRIPT id="handlePL" src="common/parts/ProgressLabel" type="binary/small" />
+
+  <!--  Specifying BGWindow  --> 
+  <BACKGROUND id="bg" master="1" mainlink="topWin"/> 
+
+  <!-- Sound specified -->
+<!--
+  <SOUND id="sg" sebde="sound/SE.bde" sehde="sound/SE.hde" bgmbde="sound/BGM.bde" bgmhde="sound/BGM.hde" bgmsqe="sound/psbb.sqe"/>
+-->
+  <SOUND id="sg" sebde="sound/SE.bde" sehde="sound/SE.hde"/>
+  <SE id="se0" group="sg" type="0" se="61" velocity="64"/>
+  <SE id="se0" group="sg" type="1" se="61" velocity="64"/>
+  <SE id="se0" group="sg" type="2" se="60" velocity="64"/>
+  <SE id="se0" group="sg" type="11" se="66" velocity="64"/>
+  <SE id="se0" group="sg" type="12" se="66" velocity="64"/>
+  <SE id="se0" group="sg" type="10" se="62" velocity="64"/>
+  <SE id="se0" group="sg" type="14" se="63" velocity="64"/>
+  <SE id="se0" group="sg" type="15" se="64" velocity="64"/>
+  <SE id="se0" group="sg" type="16" se="65" velocity="64"/>
+  <SE id="se0" group="sg" type="17" se="67" velocity="64"/>
+
+  <!-- Screen specified -->
+  <SCREEN id="ag" in="4" inoption="2" cutin="20.0" out="3" loadwinout="3" pid="progressLabel"/>
+  <PROGRESS id="progressLabel" scriptid="handlePL" parent="2D" x="400.0" y="360.0" size="18" text="Loading... " cr="0.5859" cg="0.7929" cb="0.8203" ca="1.0"/>
+
+  <!-- Initial value setting of FOCUS -->
+  <FOCUSBASE id="ag" objid="topParty"/>
+
+  <!-- Setting of CITYTOPFOCUS -->
+  <CITYTOPFOCUS id="citytop" textboxtype="1" textboxid="help" logoimgid="toplogo" logoscriptid="handleVLObject" delay="20.0"/>
+
+  <!-- Define link information -->
+  <WINLINK id="topWin"       winname="GameCityTopFG"  href="index.xml" /> 
+  <WINLINK id="infoWin"      winname="InfoTopFG"      href="info/index.xml" />
+<!--
+  <WINLINK id="gameWin"      winname="GameTopFG"      href="game/nol/index.xml" />
+-->
+  <WINLINK id="gameWin"      winname="GameTopFG"      href="download.xml" />
+  <WINLINK id="catalogWin"   winname="CatalogTopFG"   href="http://psbb.gamecity.ne.jp/catalog/index.xml" /> 
+  <WINLINK id="rulesWin"     winname="RulesTopFG"     href="rules/index.xml" /> 
+  <WINLINK id="procedureWin" winname="ProcedureTopFG" href="procedure/index.xml" /> 
+  <WINLINK id="registWin"    winname="RegistTopFG"    href="regist/index.xml" /> 
+  
+  <WINLINK id="accountWin"   winname="AccountTopFG"   href="account/index.xml" />
+  <WINLINK id="supportWin"   winname="SupportTopFG"   href="support/index.xml" /> 
+  <WINLINK id="qaWin"        winname="QaTopFG"        href="download2.xml" /> 
+  <WINLINK id="kcashWin"     winname="KoeiCashFG"     href="kcash/index.xml" /> 
+
+<!-- Note id because it is fixed in the error when the PSX! -->
+  <WINLINK id="error"       winname="GameCityTopFG"  href="psxerror.xml" /> 
+
+  <!-- Define focus information -->
+  <FOCUS id="fg0" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="1.0" bg="1.0" bb="1.0" ba="1.0"/>
+  <!-- Nebula -->
+  <FOCUS id="fg1" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="0.7" br="1.0" bg="1.0" bb="1.0" ba="0.7"/>
+  <!-- Nebula and back monolith -->
+  <FOCUS id="fg2" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="0.4" br="1.0" bg="1.0" bb="1.0" ba="0.4"/>
+  <!-- Help Display -->
+  <FOCUS id="fg3" group="fg" cr="0.5859" cg="0.7929" cb="0.8203" ca="1.0" br="0.5859" bg="0.7929" bb="0.8203" ba="1.0"/>
+  <!-- TOP star system menu, highlight -->
+  <FOCUS id="fg4" group="fg" cr="0.375" cg="0.3828" cb="0.4960" ca="1.0" br="0.375" bg="0.3828" bb="0.4960" ba="1.0"/>
+  <FOCUS id="fg5" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="0.375" bg="0.3828" bb="0.4960" ba="1.0" dr="0.7" dg="0.6" db="0.3" da="1.0" blink="3" blinkcuts="40" fgrdwn="Out of town"/>
+  <FOCUS id="fg6" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="0.375" bg="0.3828" bb="0.4960" ba="1.0" dr="0.7" dg="0.6" db="0.3" da="1.0" blink="3" blinkcuts="40" fgrdwn="Out of town" fgrrht="Decide" helptext1="Maintenance information and up-to-date information" helptext2="Bomberman Online" helptext3="catalog" helptext4="Various registration and payment procedure" helptext5="Nobunanga Online"/>
+  <!-- LEVEL2 Star system menu highlight -->
+  <FOCUS id="fg7" group="fg" cr="0.7031" cg="0.4296" cb="0.7031" ca="1.0" br="0.7031" bg="0.4296" bb="0.7031" ba="1.0"/>
+  <FOCUS id="fg8" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="0.7031" bg="0.4296" bb="0.7031" ba="1.0" dr="0.7" dg="0.6" db="0.3" da="1.0" blink="3" blinkcuts="40" fgrdwn="Return"/>
+  <FOCUS id="fg9" group="fg" cr="1.0" cg="1.0" cb="1.0" ca="1.0" br="0.7031" bg="0.4296" bb="0.7031" ba="1.0" dr="0.7" dg="0.6" db="0.3" da="1.0" blink="3" blinkcuts="40" fgrdwn="Return" fgrrht="Decide" helptext1="Terms of use on the network" helptext2="Introduction of necessary procedures" helptext3="ID registration of GAMECITY (free)" helptext4="Registration and verification of game account" helptext5="Purchase and balance confirmation of Koei-Cash" helptext6="Here if civil ID · Password forgotten"/>
+
+  <!-- Definition of material -->
+  <!-- Nebula of back -->
+  <IMG id="imgnebula11" href="texture/BG_seiun01.tm2"/> 
+  <IMG id="imgnebula12" href="texture/BG_seiun02.tm2"/> 
+  <IMG id="imgnebula13" href="texture/BG_seiun03.tm2"/> 
+  <!-- Logo -->
+  <IMG id="imglkoei"  href="texture/koei_logo01.tm2"/>
+  <IMG id="imglgcity" href="texture/gamecity_logo01.tm2"/> 
+  <IMG id="imgltcity" href="texture/gamecity_logo02.tm2"/>
+  <!-- And nebulae monolith, light group -->
+  <IMG id="imgsymbol"    href="texture/symbol.tm2"/>
+  <IMG id="imgnebula01"  href="texture/seiun01.tm2"/> 
+  <IMG id="imgnebula02"  href="texture/seiun02.tm2"/> 
+  <IMG id="imgfirefly01" href="texture/hikari01.tm2"/> 
+  <IMG id="imgfirefly02" href="texture/hikari02.tm2"/> 
+  <IMG id="imgfirefly03" href="texture/hikari03.tm2"/> 
+  <!-- Star system of menu -->
+  <IMG id="imgstar01" href="texture/star01.tm2"/>
+  <IMG id="imgstar02" href="texture/star02.tm2"/>
+  <IMG id="imgstar03" href="texture/star03.tm2"/>
+  <!-- TOP menu label -->
+  <IMG id="imgtinfo"    href="texture/tinfo.tm2"/> 
+  <IMG id="imgtgame"    href="texture/tgame.tm2"/> 
+  <IMG id="imgtcatalog" href="texture/tcatalog.tm2"/> 
+  <IMG id="imgtentry"   href="texture/tentry.tm2"/> 
+  <IMG id="imgtqa"      href="texture/tqa.tm2"/> 
+  <!-- ENTRY menu label -->
+  <IMG id="imgtrules"     href="texture/trules.tm2"/> 
+  <IMG id="imgtprocedure" href="texture/tprocedure.tm2"/> 
+  <IMG id="imgtregist"    href="texture/tregist.tm2"/> 
+  <IMG id="imgtaccount"   href="texture/taccount.tm2"/> 
+  <IMG id="imgtkcash"     href="texture/tkcash.tm2"/> 
+  <IMG id="imgtsupport"   href="texture/trescue.tm2"/> 
+
+  <!-- Location information of each material -->
+  <!-- Nebula of back -->
+  <OBJECT id="nebula12" parent="2D" imgid="imgnebula12" x="130.0" y="240.0" z="-100.0" lsx="1000.0" lsy="1000.0" lsz="1.0" arotz="-0.001" focusgroupindex="2"/> 
+  <OBJECT id="nebula12" parent="2D" imgid="imgnebula12" x="320.0" y="241.0" z="-100.0" lsx="1000.0" lsy="1000.0" lsz="1.0" arotz="0.003" focusgroupindex="2"/> 
+  <OBJECT id="nebula13" parent="2D" imgid="imgnebula13" x="400.0" y="242.0" z="-100.0" lsx="1000.0" lsy="1000.0" lsz="1.0" arotz="0.002" focusgroupindex="2"/> 
+  <!-- Help -->
+  <MENU id="help" parent="2D" valn="2" haln="2" x="635.0" y="380.0" z="0.0" size="18" focusgroupindex="3"/> 
+  <!-- Logo -->
+  <IMAGE id="koeilogo" parent="2D" imgid="imglkoei" x="535.0" y="62.0" z="0.0" lsx="80.0" lsy="33.48"/> 
+  <IMAGE id="citylogo" parent="2D" imgid="imgltcity" x="15.0" y="360.0" z="0.0"/> 
+  <OBJECT id="toplogo" parent="2D" imgid="imglgcity" x="320.0" y="220.0" z="0.0" lsx="233.0" lsy="217.62" dcuts="60.0" dx="320.0" dy="245.0" dz="0.0" dlsx="1200.0" dlsy="1200.0" drotx="-1.4" droty="-1.4" drotz="-1.4"/> 
+  <!-- And nebulae monolith, light group -->
+  <OBJECT id="symbol" parent="2D" imgid="imgsymbol" x="440.0" y="220.0" z="0.0" lsx="116.0" lsy="397.0" lsz="1.0" rotz="0.01" arotx="-0.0003" aroty="0.0006" arotz="0.0010" mrotx="0.45" mroty="0.45" mrotz="0.45" focusgroupindex="2"/>
+  <OBJECT id="nebula01" parent="2D" imgid="imgnebula01" x="320.0" y="240.0" z="0.0" lsx="1200.0" lsy="1200.0" lsz="1.0" rotx="-1.4" roty="-1.4" rotz="-1.4" arotz="-0.004" focusgroupindex="1" /> 
+  <OBJECT id="nebula02" parent="2D" imgid="imgnebula02" x="320.0" y="241.0" z="0.0" lsx="1200.0" lsy="1200.0" lsz="1.0" rotx="-1.4" roty="-1.4" rotz="-1.4" arotz="0.004" focusgroupindex="1" /> 
+  <EFFECT id="firefly01" parent="2D" imgid="imgfirefly01" cuts="60" x="320.0" y="240.0" z="0.0" roty="0.3" aroty="0.003" arotz="0.001" width="14.0" height="200.0" axis0="3.0" axis4="6.0"/> 
+  <EFFECT id="firefly02" parent="2D" imgid="imgfirefly02" cuts="60" x="320.0" y="240.0" z="0.0" aroty="-0.001" arotz="-0.0015" width="5.0" height="200.0" axis0="1.0" axis4="1.0"/> 
+  <EFFECT id="firefly03" parent="2D" imgid="imgfirefly03" cuts="60" x="320.0" y="240.0" z="0.0" aroty="0.0018" arotz="0.001" width="9.0" height="200.0" axis0="2.0" axis4="2.0"/> 
+  <!-- Star systems TOP menu -->
+  <OBJECT id="topParty" actid="actTop" ischildloaded="1" cx="30.0" dep="400.0" depthfade="2" radius="100.0" cuts="15" rtime="50" timing="16" time="300.0" x="0.0" y="0.0" z="0.0" rotx="0.3" arotx="0.0015" aroty="0.001" arotz="0.004" mrotx="0.14" mroty="0.1" mrotz="0.5" focusgroupindex="4"/>
+  <OBJECTDETAIL id="topObj0" group="topParty" imgid="imgstar01" type="2" textimgid="imgtinfo" tlsx="107.484" tlsy="14.88" lsx="45.0" lsy="41.85" focusgroupindex="6" link="infoWin"/>
+  <OBJECTDETAIL id="topObj1" group="topParty" imgid="imgstar01" type="2" textimgid="imgtgame" tlsx="46.644" tlsy="14.88" lsx="45.0" lsy="41.85" focusgroupindex="6" link="gameWin"/>
+  <OBJECTDETAIL id="topObj2" group="topParty" imgid="imgstar01" type="2" textimgid="imgtcatalog" tlsx="73.684" tlsy="14.88" lsx="45.0" lsy="41.85" focusgroupindex="6" link="catalogWin"/>
+  <OBJECTDETAIL id="topObj3" group="topParty" imgid="imgstar01" type="2" textimgid="imgtentry" tlsx="53.404" tlsy="14.88" lsx="45.0" lsy="41.85" focusgroupindex="6" link="entryParty"/>
+  <OBJECTDETAIL id="topObj4" group="topParty" imgid="imgstar01" type="2" textimgid="imgtgame" tlsx="34.476" tlsy="14.88" lsx="45.0" lsy="41.85" focusgroupindex="6" link="qaWin"/>
+  <!-- Star systems ENTRY menu -->
+  <OBJECT id="entryParty" actid="actEntry" cx="45.0" dep="400.0" depthfade="2" scriptid="handlePartyObject" radius="100.0" cuts="15" time="300.0" ctime="24" x="-160.0" y="-80.0" z="200.0" rotx="0.3" arotx="0.0015" aroty="0.001" arotz="0.004" mrotx="0.14" mroty="0.1" mrotz="0.5" focusgroupindex="7"/>
+  <OBJECTDETAIL id="entryObj0" group="entryParty" imgid="imgstar02" type="2" textimgid="imgtrules"     tlsx="49.05" tlsy="12.00" lsx="45.0" lsy="41.85" focusgroupindex="9" link="rulesWin"/>
+  <OBJECTDETAIL id="entryObj1" group="entryParty" imgid="imgstar02" type="2" textimgid="imgtprocedure" tlsx="64.495" tlsy="12.00" lsx="45.0" lsy="41.85" focusgroupindex="9" link="procedureWin"/>
+  <OBJECTDETAIL id="entryObj2" group="entryParty" imgid="imgstar02" type="2" textimgid="imgtregist"    tlsx="49.595" tlsy="12.00" lsx="45.0" lsy="41.85" focusgroupindex="9" link="registWin"/>
+  <OBJECTDETAIL id="entryObj3" group="entryParty" imgid="imgstar02" type="2" textimgid="imgtaccount"   tlsx="52.865" tlsy="12.00" lsx="45.0" lsy="41.85" focusgroupindex="9" link="accountWin"/>
+  <OBJECTDETAIL id="entryObj4" group="entryParty" imgid="imgstar02" type="2" textimgid="imgtkcash"     tlsx="47.415" tlsy="12.00" lsx="45.0" lsy="41.85" focusgroupindex="9" link="kcashWin"/>
+  <OBJECTDETAIL id="entryObj5" group="entryParty" imgid="imgstar02" type="2" textimgid="imgtsupport"   tlsx="44.09" tlsy="12.00" lsx="45.0" lsy="41.85" focusgroupindex="9" link="supportWin"/>
+
+  <!-- Place the materials and describe the movement of the action at the time -->
+  <!-- Main -->
+  <ACTION id="mnebula11" group="ag" objid="nebula11" objtype="9" scriptid="handleVObject" anim="1" /> 
+  <ACTION id="mnebula12" group="ag" objid="nebula12" objtype="9" scriptid="handleVObject" anim="1" /> 
+  <ACTION id="mnebula13" group="ag" objid="nebula13" objtype="9" scriptid="handleVObject" anim="1" /> 
+  <ACTION id="mActSymbol" group="ag" objid="symbol" objtype="9" anim="3" scriptid="handleVObject"/>
+  <ACTION id="mActklogo" group="ag" objid="koeilogo" objtype="2"/>
+  <ACTION id="mActclogo" group="ag" objid="citylogo" objtype="2"/>
+  <ACTION id="mActTop" group="ag" objid="topParty" objtype="10" scriptid="handlePartyObject" anim="3" rdwn="bbmlSceBack"/>
+  <ACTION id="mActNebula01" group="ag" objid="nebula01" objtype="9" scriptid="handleVObject" anim="1" /> 
+  <ACTION id="mActNebula02" group="ag" objid="nebula02" objtype="9" scriptid="handleVObject" anim="1" /> 
+  <!-- TOP menu -->
+  <ACTION id="topAct1" group="actTop" objid="topObj1" objtype="11" helptext="2" rdwn="bbmlParent" rrht="loadWindow"/>
+<!-- CATALOG in the future-->
+  <ACTION id="topAct2" group="actTop" objid="topObj2" objtype="11" helptext="3" rdwn="bbmlParent" rrht="loadWindow"/>
+<!--
+  <ACTION id="topAct3" group="actTop" objid="topObj3" objtype="11" helptext="4" rdwn="bbmlParent" rrht="loadAct"/>
+  
+  <ACTION id="topAct0" group="actTop" objid="topObj0" objtype="11" helptext="1" rdwn="bbmlParent" rrht="loadWindow"/>
+-->
+  <ACTION id="topAct4" group="actTop" objid="topObj4" objtype="11" helptext="5" rdwn="bbmlParent" rrht="loadWindow"/>
+  <ACTION id="topEAct0" group="actTop" objid="firefly01" objtype="8" scriptid="handleSNebula"/>
+  <ACTION id="topEAct1" group="actTop" objid="firefly02" objtype="8" scriptid="handleSNebula"/>
+  <!-- Registration billing menu -->
+  <ACTION id="entryAct0" group="actEntry" objid="entryObj0" objtype="11" helptext="1" rdwn="bbmlParent" rrht="loadWindow"/>
+  <ACTION id="entryAct1" group="actEntry" objid="entryObj1" objtype="11" helptext="2" rdwn="bbmlParent" rrht="loadWindow"/>
+  <ACTION id="entryAct2" group="actEntry" objid="entryObj2" objtype="11" helptext="3" rdwn="bbmlParent" rrht="loadWindow"/>
+  <ACTION id="entryAct3" group="actEntry" objid="entryObj3" objtype="11" helptext="4" rdwn="bbmlParent" rrht="loadWindow"/>
+  <ACTION id="entryAct4" group="actEntry" objid="entryObj4" objtype="11" helptext="5" rdwn="bbmlParent" rrht="loadWindow"/>
+  <ACTION id="entryAct5" group="actEntry" objid="entryObj5" objtype="11" helptext="6" rdwn="bbmlParent" rrht="loadWindow"/>
+</RESOURCE>

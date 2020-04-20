@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.scei.co.jp/bn/2002/">
+  <!-- Define the script information -->
+  <SCRIPT id="main" src="common/parser/BBMLParserBgInitiator" type="binary/small"/>
+
+  <!-- Specifying BGWindow -->
+  <BACKGROUND id="bg" link="bgWin" master="1"/>
+
+  <!-- Define link information -->
+<WINLINK id="bgWin" winname="GameCityTopBG" href="GameCityTopBG.xml" />
+<!--   
+  <WINLINK id="bgWin" winname="GameCityTopBG" href="game/nol/trial/download.xml" />  
+-->
+</RESOURCE>
