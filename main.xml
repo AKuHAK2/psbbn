@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESOURCE version="1.1" xmlns="http://www.scei.co.jp/bn/2002/" screen_h="480">
+	<SCRIPT id="main" src="menu" type="binary/small"/>
+	<BG id="bg" href="bg.xml" />
+	<IMG id="bg" src="menu/bg.png" />
+	<IMG id="banner" src="menu/download channel_title.png" />
+	<IMG id="medal1" src="menu/logo.png" />
+	<IMG id="medal2" src="menu/logo2.png" />
+	<IMG id="box" src="menu/box.png" />
+	<IMG id="arrow" src="menu/arrow.png" />
+	<IMG id="bg" src="menu/bg.png" />
+	<BUTTON_IMG id="1" src="menu/button1.png" />
+	<BUTTON_IMG id="2" src="menu/button2.png" />
+	<BUTTON_IMG id="3" src="menu/button3.png" />
+	<BUTTON_IMG id="4" src="menu/button4.png" />
+	<DESC_IMG id="1" src="menu/content1.png" />
+	<DESC_IMG id="2" src="menu/content2.png" />
+	<DESC_IMG id="3" src="menu/content3.png" />
+	<DESC_IMG id="4" src="menu/content4.png" />
+	<LINK id="1" href="Videos/video.xml" />
+	<LINK id="2" href="Images/images.xml" />
+	<LINK id="3" href="Music/music.xml" />
+	<LINK id="4" href="PKG/pkg.xml" />
+</RESOURCE>
